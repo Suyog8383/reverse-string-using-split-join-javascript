@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //Array of elements can be reverse with reverse() method
+  let name = ["a", "b", "c", "d"];
+  let copyName = name.reverse();
+  console.log("@SN ", copyName);
+  //but for string it is won't possible so required to split and then join.
+  let name1 = "abcd";
+  let copyName1 = name1.split("");
+  console.log("@SN split:", copyName1); //@SN split: (4) ['a', 'b', 'c', 'd']
+  let copyName2 = copyName1.reverse();
+  console.log("@SN reverse:", copyName2); //@SN reverse: (4) ['d', 'c', 'b', 'a']
+  let copyName3 = copyName2.join("");
+  console.log("@SN 2 join:", copyName3); //@SN 2 join: dcba
+</script>
